@@ -9,9 +9,8 @@
             @include('layouts.top_menu', ['categories' => $category->children])
         </ul>
     @else
-            <li>
-                <a href="{{url("/blog/category/$category->slug")}}">{{$category->title}}</a>
-            
-            </li>
+        <li>
+            <a href="{{url("/blog/category/$category->slug")}}">{{$category->title}}</a>
+        </li>
     @endif
 @endforeach
