@@ -43,6 +43,15 @@
                     </tr>
                 @endforelse
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <ul class="pagination float-right">
+                            {{$articles->links()}}
+                        </ul>
+                    </td>
+                </tr>
+            </tfoot>
         </table>
     </div>
 @endsection
