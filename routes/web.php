@@ -23,10 +23,13 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin', 'middleware'=>['auth']], 
     });
 });
 
-Route::get('/', function () {
-    return view('blog.home');
-});
+// Route::get('/', 'PostsController@posts' )->name('posts');
+
+// Route::get('/', 'PostsController@index', function () {
+//     return view('blog.home');
+// });
+
+Route::get('/', 'PostsController@article');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
