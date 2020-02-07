@@ -165,6 +165,7 @@ return [
 
         //Own providers
         App\Providers\BlogServiceProvider::class,
+        
 
     ],
 

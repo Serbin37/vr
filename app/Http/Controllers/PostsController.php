@@ -12,6 +12,11 @@ class PostsController extends Controller
 {
     public function article(){
         $articles = Article::all();
-        return view('blog.home')->with('articles', $articles);
+        $categories = Category::all();
+        return view('blog.home', [
+            'articles' => $articles,
+            'categories' => $categories,
+        ]);
     }
+    
 }

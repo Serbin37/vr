@@ -21,4 +21,9 @@ class BlogController extends Controller
             'article' => Article::where('slug', $slug)->first()
         ]);
     }
+    public function page($slug) {
+        return view('blog.pages', [
+            'page' => $page,
+        ]);
+    }
 }
