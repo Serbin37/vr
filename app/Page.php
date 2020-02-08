@@ -13,5 +13,6 @@ class Page extends Model
     // Mutators
     public function setSlugAttribute($value) {
         $this->attributes['slug'] = Str::slug( mb_substr($this->title, 0, 40) . "-" . \Carbon\Carbon::now()->format('dmyHi'), '-');
-      }
+    }
+
 }
