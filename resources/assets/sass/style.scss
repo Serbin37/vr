@@ -1,0 +1,97 @@
+@import 'variables';
+
+.navbar {
+    background: $orange;
+
+    .navbar-brand {
+        color: #f4f4f4;
+        cursor: pointer;
+    }
+
+    .nav-link {
+        margin-right: 1em !important;
+        color: #f4f4f4;
+
+        &:hover {
+            background: #f4f4f4;
+            color: #f97300;
+        }
+    }
+
+    .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .navbar-toggler {
+        background: #fff !important;
+    }
+}
+
+
+.blog {
+    margin: 4em 0;
+    position: relative;
+
+    h1 {
+        color: #F97300;
+        margin: 2em;
+    }
+
+    .card {
+        box-shadow: 0 0 20px #ccc;
+        margin: 0 0 1.5em;
+        img {
+            width: 100%;
+            height: 12em;
+        }
+
+        &-body {
+            padding: 20px 25px 25px;
+
+            &_created_at {
+                color: $orange;
+                font-size: 14px;
+                font-weight: 600;
+                margin: 0;
+            }
+        }
+
+        &-title a {
+            color: $black;
+            font-size: 19px;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &-text a {
+            color: #949494;
+            font-size: 14px;
+            font-weight: 400;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.categories{
+    ul{
+        padding: 0;
+    }
+    &-title {
+        font-weight: 900;
+        border-bottom: 1px solid #e4e4e4;
+        padding-bottom: 6px;
+    }
+    &-item {
+        list-style-type: none;
+        margin: 5px 0;
+        a{
+            font-weight: 400;
+            color: $gray;
+        }
+    }
+}

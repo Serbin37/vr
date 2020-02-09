@@ -3,11 +3,16 @@
 $body-bg: #f8fafc;
 
 // Typography
-$font-family-sans-serif: "Nunito", sans-serif;
+//$font-family-sans-serif: "Nunito", sans-serif;
+$font-family-sans-serif: 'Open Sans',helvetica,'helvetica neue',arial,sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
+$black: #000;
+$orange: #F97300;
+$gray: #727272;
+
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;

@@ -31,7 +31,7 @@ class BlogController extends Controller
         $pages = Page::all();
         return view('blog.pages', [
             'pages' => $pages,
-            'page' => Page::where('slug', $slug),
+            'page' => Page::where('slug', $slug)->first(),
         ]);
     }
 }

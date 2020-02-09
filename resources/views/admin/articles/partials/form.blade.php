@@ -20,6 +20,9 @@
   @include('admin.articles.partials.categories', ['categories' => $categories])
 </select>
 
+<label for="">Загрузка изображений</label>
+<button><a href="{{route('image.upload.button')}}">Перейти на страницу загрузки</a></button>
+
 <label for="">Краткое описание</label>
 <textarea class="form-control" id="description_short" name="description_short">{{$article->description_short or ""}}</textarea>
 

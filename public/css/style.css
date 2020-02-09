@@ -1,0 +1,97 @@
+.navbar {
+  background: #f6993f;
+}
+
+.navbar .navbar-brand {
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+.navbar .nav-link {
+  margin-right: 1em !important;
+  color: #f4f4f4;
+}
+
+.navbar .nav-link:hover {
+  background: #f4f4f4;
+  color: #f97300;
+}
+
+.navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar .navbar-toggler {
+  background: #fff !important;
+}
+
+.blog {
+  margin: 4em 0;
+  position: relative;
+}
+
+.blog h1 {
+  color: #F97300;
+  margin: 2em;
+}
+
+.blog .card {
+  box-shadow: 0 0 20px #ccc;
+  margin: 0 0 1.5em;
+}
+
+.blog .card img {
+  width: 100%;
+  height: 12em;
+}
+
+.blog .card-body {
+  padding: 20px 25px 25px;
+}
+
+.blog .card-body_created_at {
+  color: #f6993f;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.blog .card-title a {
+  color: #000;
+  font-size: 19px;
+}
+
+.blog .card-title a:hover {
+  text-decoration: none;
+}
+
+.blog .card-text a {
+  color: #949494;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.blog .card-text a:hover {
+  text-decoration: none;
+}
+
+.categories ul {
+  padding: 0;
+}
+
+.categories-title {
+  font-weight: 900;
+  border-bottom: 1px solid #e4e4e4;
+  padding-bottom: 6px;
+}
+
+.categories-item {
+  list-style-type: none;
+  margin: 5px 0;
+}
+
+.categories-item a {
+  font-weight: 400;
+  color: #727272;
+}
+

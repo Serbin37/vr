@@ -25,6 +25,9 @@ Route::group(['prefix'=>'admin', 'namespace'=>'Admin', 'middleware'=>['auth']], 
     });
 });
 
+Route::post('uploads/image', 'ImageController@upload')->name('image.upload');
+Route::get('image/upload', 'ImageController@form')->name('image.upload.button');
+
 // Route::get('/', 'PostsController@posts' )->name('posts');
 
 // Route::get('/', 'PostsController@index', function () {
