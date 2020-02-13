@@ -16,6 +16,6 @@
 {{--@endforeach--}}
 
 
-@foreach($pages as $page)
-    <p><a href="{{route('page', $page->slug)}}}">{{$page->title}}</a></p>
-@endforeach
+{{--@foreach($pages as $page)--}}
+{{--    <p><a href="{{route('page', $page->slug)}}}">{{$page->title}}</a></p>--}}
+{{--@endforeach--}}

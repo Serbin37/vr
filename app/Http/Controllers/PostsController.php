@@ -11,13 +11,10 @@ use Illuminate\Http\Request;
 class PostsController extends Controller
 {
     public function article(){
-        $articles = Article::all();
-        $categories = Category::all();
-        $pages = Page::all();
         return view('blog.home', [
-            'articles' => $articles,
-            'categories' => $categories,
-            'pages' => $pages
+            'articles' => Article::orderBy('created_at', 'desc')->paginate(10),
+            'categories' => Category::all(),
+            'pages' => Page::all(),
         ]);
     }
 

@@ -14,5 +14,10 @@ class Page extends Model
     public function setSlugAttribute($value) {
         $this->attributes['slug'] = Str::slug( mb_substr($this->title, 0, 40) . "-" . \Carbon\Carbon::now()->format('dmyHi'), '-');
     }
+    public function scopeOfSlug($query, $slug)
+    {
+        return $query->where('slug', $slug);
+    }
+
 
 }

@@ -10,6 +10,7 @@
             <div class="col-sm-12">
                 <h1>{{$page->title or ""}}</h1>
 {{--                <p>{!!$page->description!!}</p>--}}
+
             </div>
 
         </div>

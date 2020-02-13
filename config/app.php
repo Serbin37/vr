@@ -165,7 +165,8 @@ return [
 
         //Own providers
         App\Providers\BlogServiceProvider::class,
-        
+        Spatie\Glide\GlideServiceProvider::class,
+        Dan\UploadImage\UploadImageServiceProvider::class,
 
     ],
 
@@ -216,6 +217,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'GlideImage' => Spatie\Glide\GlideImageFacade::class,
+        'UploadImage' => Dan\UploadImage\UploadImageFacade::class,
     ],
 
 ];

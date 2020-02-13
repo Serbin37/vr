@@ -20,8 +20,13 @@
   @include('admin.articles.partials.categories', ['categories' => $categories])
 </select>
 
+
+<label for="">Превью:</label>
+<input type="text" class="form-control" name="preview" placeholder="URL Preview" value="{{$article->image or ""}}">
+
 <label for="">Загрузка изображений</label>
-<button><a href="{{route('image.upload.button')}}">Перейти на страницу загрузки</a></button>
+<button><a href="{{route('image.upload.button')}}" target="_blank">Перейти на страницу загрузки</a></button>
+{{--<input type="img" type="file" multiple name="file[]">--}}
 
 <label for="">Краткое описание</label>
 <textarea class="form-control" id="description_short" name="description_short">{{$article->description_short or ""}}</textarea>

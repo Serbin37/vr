@@ -11,7 +11,7 @@
                             <div class="col-md-6">
                                 <div class="card">
                                     <div class="card-img">
-                                        <img src="images/posts/polit.jpg" class="img-fluid">
+                                        <img src="{{$article->image}}" class="img-fluid">
                                     </div>
                                     <div class="card-body">
                                         <p class="card-body_created_at">{{$article->created_at}}</p>
@@ -27,6 +27,7 @@
                                 </div>
                             </div>
                         @endforeach
+                        {{$articles->links()}}
                     </div>
                 </div>
                 <div class="col-md-4">
